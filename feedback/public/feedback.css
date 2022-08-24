@@ -1,0 +1,11 @@
+.feedback-container {
+    position: fixed;
+    transform: rotate(-90deg);
+    right: -22px;
+    top: 50%;
+    border: 1px solid blue;
+    padding: 5px;
+    background-color: #d8d8ee;
+    cursor: pointer;
+    z-index: 1000000;
+}
