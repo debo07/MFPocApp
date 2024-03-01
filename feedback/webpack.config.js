@@ -17,7 +17,8 @@ module.exports = {
             name: "feedback",
             filename: "remoteEntry.js",
             exposes: {
-                "./FeedbackComponent": "./src/components/Feedback",
+                "./feedback": "./src/components/Feedback",
+                "./utils": "./src/utils/utils",
             },
             // shared: {
             //     ...dependencies,

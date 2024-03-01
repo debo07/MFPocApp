@@ -1,5 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Feedback } from "./components/Feedback";
+import Feedback from "./components/Feedback";
+import enableMocking from "./utils/utils";
 
-ReactDOM.render(<Feedback />, document.getElementById("root"));
+function start() {
+    enableMocking().then(() => {
+        console.log("Mocking enabled");
+        ReactDOM.render(<Feedback />, document.getElementById("root"));
+    });
+}
+
+start();
